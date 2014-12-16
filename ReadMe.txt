@@ -7,7 +7,7 @@ and hence save memory.
 
 For each read word read from the file, I first sort the word, remove spaces and then I check if the HashMap has an entry for this string.
 If the Map has an entry, i.e. the dictionary had anagrams of this string, I return the List of anagrams (not displaying duplicates),
-else I return 'Does not exist'.
+else I return 'Does not exist'. I also checked for some bizarre characters from other languages, to see if my program can read the characters.
 
 As Wikipedia says, I took care of spaces as well, as spaces should not be considered in anagrams, so words like 'New York', 'YORK NEW', 
 'NEWYORK', 'newyork', 'yronekw' will all be anagrams of each other. So I took this into account too.
